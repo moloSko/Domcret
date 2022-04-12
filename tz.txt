@@ -1,0 +1,12 @@
+Forum
+1.Авторизация.
+2.Регистрация.(+ привязка по почте)
+3.Личный Кабинет.
+4.Разделы.
+5.Подразделы.
+7.Добавление разделов/тем/подразделов.
+<div class='relev_poz'>
+    <label class='neobh_razd' data-tooltip='Обязательно для заполнения'>*</label>
+    <label for='use_reazd_name'>Загрузите изображение в формате png размером не более 33px на 33px:</label>
+    <input class='img_form_decor' type='file' name='file' multiple accept='.png'/>
+</div>

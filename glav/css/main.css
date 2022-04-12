@@ -1,0 +1,232 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+@import url(http://meyerweb.com/eric/tools/css/reset/reset.css);
+@import url(https://fonts.googleapis.com/css2?family=Russo+One&display=swap);
+/* ---------- FONTAWESOME ---------- */
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* ---------- GENERAL ---------- */
+
+body {
+  background-color: #342c38;
+  /*запомнить красивый цвет - #342c38*/
+  color: #606468;
+  font-family: 'Russo One', sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+a {
+  color: #eee;
+  text-decoration: none;
+}
+
+input {
+  border: none;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+  padding: 0;
+  -webkit-appearance: none;
+}
+
+button {
+  border: none;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+  padding: 0;
+  -webkit-appearance: none;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+
+/* ---------- TOP BAR ---------- */
+
+.log_forch {
+  transform: scale(-1, 1);
+}
+
+
+nav {
+  margin: 5px 0;
+  background-color: #6e4c61;
+}
+
+/* убираем отступы и поля, а также list-style для "ul", 
+* и добавляем "position:relative" */
+nav ul {
+  padding: 0 15px;
+  margin: 0 40px;
+  list-style: none;
+  position: relative;
+}
+
+/* применяем inline-block позиционирование к элементам навигации */
+nav ul li {
+  margin: 0px -7px 0 0;
+  display: inline-block;
+}
+
+/* стилизуем ссылки */
+nav a {
+  display: block;
+  padding: 0 10px;
+  color: #FFF;
+  font-size: 15px;
+  line-height: 60px;
+  text-decoration: none;
+}
+
+/* изменяем цвет фона при наведении курсора */
+nav a:hover {
+  background-color: #000000;
+}
+
+/* скрываем выпадающие списки по умолчанию
+			 * и задаем абсолютное позиционирование */
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+}
+
+/* отображаем выпадающий список при наведении */
+nav ul li:hover>ul {
+  display: inherit;
+}
+
+/* первый уровень выпадающего списка */
+nav ul ul li {
+  min-width: 170px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+/*nav ul li .exitpad {}*/
+
+nav ul li span {
+  padding-right: 4px;
+}
+
+#navBar ul .menu-text a {
+  max-width: 85%;
+}
+
+#navBar ul .right {
+  float: right;
+}
+
+#navBar ul .right_pos {
+  float: right;
+}
+
+#navBar ul .right_pos a {
+  display: inline-block;
+}
+
+.icon {
+  display: none;
+  font-size: 0.95em;
+}
+
+@media screen and (max-width: 680px) {
+  nav ul li:not(:nth-child(3)) {
+    display: none;
+  }
+
+  nav ul li.icon {
+    display: inline-block;
+  }
+
+  label {
+    cursor: pointer;
+  }
+
+  #gepleasurprised:checked~li {
+    float: none;
+    display: inline;
+  }
+
+  #gepleasurprised:checked~li>a {
+    display: block;
+    /*border-bottom: 1px solid black;*/
+  }
+}
+
+
+/* ----------MAIN-Главный раздел страницы---------- */
+.row {
+  padding: 0 15px;
+  margin: 0 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.row main {
+  background: rgba(107, 82, 107, 0.35);
+  /*rgba(110, 76, 97, 0.35);*/
+  border-radius: 1.2%;
+  width: 870px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.row main nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  margin-top: 0px;
+  padding: 3px 15px;
+  word-break: break-all;
+}
+
+.bloc-tov {
+  display: block;
+  width: 130px;
+  height: 180px;
+  border-radius: 2%;
+  background: #5a4d5c;
+  color: white;
+  padding: 20px;
+  margin: 20px;
+  transition-duration: .4s;
+}
+
+.bloc-tov div {
+  display: contents;
+}
+
+.bloc-tov p {
+  display: inline;
+  text-align: center;
+}
+
+.bloc-tov a img {
+  width: 130px;
+  height: 130px;
+}
+
+.bloc-tov em {
+  display: inline;
+  float: right;
+}
+
+.rotbat :hover {
+  transform: rotateZ(20deg);
+}
+
+/*transform: scale3d(1, 1, 1); - убрать повороты на блоке*/
