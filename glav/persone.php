@@ -14,6 +14,7 @@ if(isset($_SESSION['logged_user'])){
         <link rel="shortcut icon" href="../img/pachmark.ico" type="img/x-icon">
         <title>Бульмень</title>
         <link rel="stylesheet" href = "css/main.css">
+        <script type="text/javascript" scr="../js/jquery.js"></script>
     </head>
     <body>
     <!--<H1>Привет мир!</H1>-->
